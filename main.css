@@ -1,7 +1,37 @@
-header {
-  background-color: #14281D;
+body {
+  background-color: #C7CEDB;
 }
 
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  padding: 15px;
+}
+
+h1 {
+  padding: 15px;
+}
+header {
+  background-color: #14281D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+#logo {
+  width: 30%;
+  height: auto;
+}
+
+.subSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 #aboutUs {
   background-color: #6E633D;
 }
@@ -18,6 +48,16 @@ header {
   background-color: #C7CEDB;
 }
 
+#prod {
+  display: flex;
+  justify-content: center;
+}
+
 footer {
   background-color: #14281D;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  color: white;
 }
