@@ -208,22 +208,43 @@ footer {
 
 .onceler2 {
   animation: onceler 20s forwards;
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 
 .onceler3 {
   animation: onceler 20s forwards;
-  animation-delay: 8s;
+  animation-delay: 6s;
 }
 .onceler4 {
   animation: onceler 20s forwards;
-  animation-delay: 12s;
+  animation-delay: 9s;
 }
 .onceler5 {
   animation: onceler 20s forwards;
-  animation-delay: 16s;
+  animation-delay: 12s;
 }
 
+.lorax1 {
+  animation: lorax 20s forwards;
+}
+
+.lorax2 {
+  animation: lorax 20s forwards;
+  animation-delay: 3s;
+}
+
+.lorax3 {
+  animation: lorax 20s forwards;
+  animation-delay: 6s;
+}
+.lorax4 {
+  animation: lorax 20s forwards;
+  animation-delay: 9s;
+}
+.lorax5 {
+  animation: lorax 20s forwards;
+  animation-delay: 12s;
+}
 
 @keyframes slideFromLeft {
   from {left: -150%;}
