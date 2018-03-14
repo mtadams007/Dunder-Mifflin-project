@@ -5,6 +5,9 @@ const moveRight = document.getElementById('buttonRight');
 
 const itemForSale = document.getElementById('switchProduct');
 
+
+
+
 //Moves items from right to left to view
 moveLeft.addEventListener('click', function(e) {
   // debugger;
