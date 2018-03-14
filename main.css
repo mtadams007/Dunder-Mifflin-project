@@ -1,5 +1,9 @@
 body {
-  background-color: #C7CEDB;
+  background-color: #373F51;
+}
+
+a {
+  margin: 20px;
 }
 
 div {
@@ -14,8 +18,15 @@ p {
 h1 {
   padding: 15px;
 }
+
+h2 {
+  font-size: 40px;
+  padding: 50px;
+}
+
 header {
   background-color: #14281D;
+  /* background-color: #373F51; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,7 +35,7 @@ header {
 
 #logo {
   width: 30%;
-  height: auto;
+  height: 30%;
 }
 
 .subSection {
@@ -36,12 +47,21 @@ header {
   background-color: #6E633D;
 }
 
+h3 {
+  justify-content: center;
+  align-items: center;
+}
+
 #environment {
   background-color: #355834;
 }
 
 #products {
   background-color: #6E633D;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
 }
 
 #testimonials {
@@ -51,6 +71,8 @@ header {
 #prod {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer {
@@ -60,4 +82,53 @@ footer {
   align-items: center;
   height: 50px;
   color: white;
+}
+
+.productOne {
+  position: relative;
+
+}
+.productTwo {
+  position: relative;
+}
+
+.productThree {
+  position: relative;
+}
+
+.leaveLeft {
+  animation: slideAwayToLeft 1s;
+}
+
+.comeFromRight {
+  animation: slideFromRight 1s forwards;
+}
+
+.comeFromLeft {
+  animation: slideFromLeft 1s forwards;
+}
+
+@keyframes slideFromLeft {
+  from {left: -150%;}
+  to {left: 0px;}
+}
+
+@keyframes slideFromRight {
+  from {right: -150%;}
+  to {right: 0%;}
+}
+
+@keyframes slideAwayToRight {
+  from {right: 0;}
+  to {right: -150%;}
+}
+
+@keyframes slideAwayToLeft {
+  from {left: 0;}
+  to {left: -150%;}
+}
+
+@keyframes hide {
+  from {opacity: 1;}
+  to {opacity: 0;}
 }
