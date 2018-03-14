@@ -1,14 +1,11 @@
-// const product1 = document.getElementsByClassName('productOne');
-//
-// const product2 = document.getElementsByClassName('productTwo');
-//
-// const product3 = document.getElementsByClassName('productThree');
+const quotation = document.getElementById('quote');
 
 const moveLeft = document.getElementById('buttonLeft');
 const moveRight = document.getElementById('buttonRight');
 
 const itemForSale = document.getElementById('switchProduct');
 
+//Moves items from right to left to view
 moveLeft.addEventListener('click', function(e) {
   // debugger;
   if (itemForSale.classList.contains('productOne')) {
@@ -28,6 +25,7 @@ moveLeft.addEventListener('click', function(e) {
   }
 });
 
+//Moves items from left to right to view
 moveRight.addEventListener('click', function(e) {
   // debugger;
   if (itemForSale.classList.contains('productOne')) {

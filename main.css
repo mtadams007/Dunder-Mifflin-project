@@ -66,6 +66,7 @@ h3 {
 
 #testimonials {
   background-color: #C7CEDB;
+  align-items: center;
 }
 
 #prod {
@@ -96,9 +97,6 @@ footer {
   position: relative;
 }
 
-.leaveLeft {
-  animation: slideAwayToLeft 1s;
-}
 
 .comeFromRight {
   animation: slideFromRight 1s forwards;
@@ -108,6 +106,37 @@ footer {
   animation: slideFromLeft 1s forwards;
 }
 
+#quote {
+  margin-top: -50px;
+  padding: 0;
+
+}
+
+#quote1 {
+  opacity: 0;
+  animation: quoteCycle 20s forwards infinite;
+}
+
+#quote2 {
+  margin-top: -60px;
+  opacity: 0;
+  animation: quoteCycle 20s forwards; infinite;
+  animation-delay: 5s;
+}
+
+#quote3 {
+  margin-top: -60px;
+  opacity: 0;
+  animation: quoteCycle 20s forwards infinite;
+  animation-delay: 10s;
+}
+
+#quote4 {
+  margin-top: -60px;
+  opacity: 0;
+  animation: quoteCycle 20s infinite;
+  animation-delay: 15s;
+}
 @keyframes slideFromLeft {
   from {left: -150%;}
   to {left: 0px;}
@@ -118,17 +147,15 @@ footer {
   to {right: 0%;}
 }
 
-@keyframes slideAwayToRight {
-  from {right: 0;}
-  to {right: -150%;}
+@keyframes quoteCycle {
+  0% {opacity: 0;}
+  5% {opacity: 1;}
+  20% {opacity: 1;}
+  25% {opacity: 0;}
+  100% {opacity: 0;}
 }
-
-@keyframes slideAwayToLeft {
-  from {left: 0;}
-  to {left: -150%;}
-}
-
 @keyframes hide {
-  from {opacity: 1;}
-  to {opacity: 0;}
+  0% {opacity: 1;}
+  10% {opacity: 0;}
+  100% {opacity: 0;}
 }
