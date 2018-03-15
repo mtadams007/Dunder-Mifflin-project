@@ -73,3 +73,24 @@ moveRight.addEventListener('click', function(e) {
     itemForSale.innerHTML ="<img src='images/notebooks.jpeg' class='productTwo product comeFromLeft'>";
   }
 });
+
+const contact = document.getElementById('contactUs');
+
+contact.addEventListener('click', function(d) {
+  info("Our email is info@munderdifflin.com and our phone number is 555-555-5555");
+});
+
+twitter.addEventListener('click', function(d) {
+  info("Our twitter handle is @munderdifflinpaper");
+});
+
+facebook.addEventListener('click', function(d) {
+  info("Please like our page at munderdifflinpaper");
+});
+
+instagram.addEventListener('click', function(d) {
+  info("Our instagram handle is @munderdifflinpaper");
+});
+let info = (str) => {
+  alert(str);
+}
