@@ -1,5 +1,3 @@
-const quotation = document.getElementById('quote');
-
 const moveLeft = document.getElementById('buttonLeft');
 const moveRight = document.getElementById('buttonRight');
 

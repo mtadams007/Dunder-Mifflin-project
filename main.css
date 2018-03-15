@@ -4,6 +4,10 @@ body {
 
 a {
   margin: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+
 }
 
 div {
@@ -107,11 +111,27 @@ footer {
   animation: slideFromLeft 1s forwards;
 }
 
-.gameButton {
-  background-color: red;
-  display: inline-block;
+/* #them {
+  float:left;
+  margin-left: 20px;
 }
 
+#us {
+  float: right;
+  margin-right: 20px;
+} */
+
+.gameButton {
+  background-color: red;
+  width: 100px;
+  /* display: inline-block; */
+  border-radius: 25%;
+  text-align: center;
+  display: inline-block;
+
+}
+
+/* TreeKillers are the block that covers up the tree I'm killing */
 
 #treeKiller1 {
   background-color: #355834;
@@ -176,6 +196,8 @@ footer {
   padding: 0;
 }
 
+/* the quotes cycle through. the delay is made so that they come one at a time and the margin is so that they are all in the same spot */
+
 #quote1 {
   opacity: 0;
   animation: quoteCycle 20s forwards infinite;
@@ -184,7 +206,7 @@ footer {
 #quote2 {
   margin-top: -70px;
   opacity: 0;
-  animation: quoteCycle 20s forwards; infinite;
+  animation: quoteCycle 20s forwards infinite;
   animation-delay: 5s;
 }
 
@@ -202,15 +224,15 @@ footer {
   animation-delay: 15s;
 }
 
+/* The oncelers kill trees */
+
 .onceler1 {
   animation: onceler 20s forwards;
 }
-
 .onceler2 {
   animation: onceler 20s forwards;
   animation-delay: 3s;
 }
-
 .onceler3 {
   animation: onceler 20s forwards;
   animation-delay: 6s;
@@ -224,7 +246,10 @@ footer {
   animation-delay: 12s;
 }
 
-.lorax1 {
+
+/* All this turned out to be useless */
+
+/* .lorax1 {
   animation: lorax 20s forwards;
 }
 
@@ -244,7 +269,7 @@ footer {
 .lorax5 {
   animation: lorax 20s forwards;
   animation-delay: 12s;
-}
+} */
 
 @keyframes slideFromLeft {
   from {left: -150%;}
@@ -256,6 +281,7 @@ footer {
   to {right: 0%;}
 }
 
+/* cycles through quotes */
 @keyframes quoteCycle {
   0% {opacity: 0;}
   5% {opacity: 1;}
@@ -273,8 +299,12 @@ footer {
   15% {opacity: 1;}
   100% {opacity: 1;}
 }
+
+/* Also an unnecessary keyframe
+
+
 @keyframes lorax {
   0% {opacity: 1;}
   15% {opacity: 0;}
   100% {opacity: 0;}
-}
+} */
